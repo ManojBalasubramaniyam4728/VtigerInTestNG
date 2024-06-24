@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Regression]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="AAA_ITestListener.listeneres"/>
+    <listener class-name="Resources.extentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="Leads.TC003_Delete_A_Lead_And_Verify_If_Lead_Is_Deleted_Successfully">
+        <methods>
+          <include name="close_browser"/>
+          <include name="Depends_On_Scripts"/>
+          <include name="Delete_The_Created_And_Updated_Lead"/>
+        </methods>
+      </class> <!-- Leads.TC003_Delete_A_Lead_And_Verify_If_Lead_Is_Deleted_Successfully -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test thread-count="5" name="Test1(failed)" verbose="0">
+    <classes>
+      <class name="Organization.TC003_Delete_An_Organization_And_Verify_If_Organization_Is_Deleted_successfully">
+        <methods>
+          <include name="Depends_On_Scripts"/>
+          <include name="Delete_The_Created_And_Updated_Lead"/>
+          <include name="close_browser"/>
+        </methods>
+      </class> <!-- Organization.TC003_Delete_An_Organization_And_Verify_If_Organization_Is_Deleted_successfully -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test2(failed)" verbose="0">
+    <classes>
+      <class name="Contacts.TC003_Delete_A_Contact_And_Verify_If_Contact_Is_Deleted_Sucessfully">
+        <methods>
+          <include name="Delete_The_Created_And_Updated_Lead"/>
+          <include name="close_browser"/>
+          <include name="Depends_On_Scripts"/>
+        </methods>
+      </class> <!-- Contacts.TC003_Delete_A_Contact_And_Verify_If_Contact_Is_Deleted_Sucessfully -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="5" name="Test3(failed)" verbose="0">
+    <classes>
+      <class name="Vendor.TC003_Delete_A_Vendor_And_Verify_If_Vendor_Is_Deleted_Sucessfully">
+        <methods>
+          <include name="Depends_On_Scripts"/>
+          <include name="close_browser"/>
+          <include name="Delete_The_Created_And_Updated_Lead"/>
+        </methods>
+      </class> <!-- Vendor.TC003_Delete_A_Vendor_And_Verify_If_Vendor_Is_Deleted_Sucessfully -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+</suite> <!-- Failed suite [Regression] -->

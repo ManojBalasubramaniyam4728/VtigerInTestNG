@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sanity]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="AAA_ITestListener.listeneres"/>
+    <listener class-name="Resources.extentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Test2(failed)" verbose="0">
+    <classes>
+      <class name="Contacts.TC001_Create_A_Contact_And_Verify_If_Contact_Is_Created_Successfully">
+        <methods>
+          <include name="close_browser"/>
+          <include name="Depends_On_Scripts"/>
+          <include name="Create_A_Contacts_And_Verify"/>
+        </methods>
+      </class> <!-- Contacts.TC001_Create_A_Contact_And_Verify_If_Contact_Is_Created_Successfully -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Sanity] -->

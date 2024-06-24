@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="Leads.TC001_Create_A_Lead_And_Verify_If_Lead_Is_Created_Successfully">
+        <methods>
+          <include name="Create_a_Lead_and_Verify"/>
+          <include name="open_Browser_And_Navigate_To_Vtiger_Url_And_Login_To_Application"/>
+          <include name="close_browser"/>
+        </methods>
+      </class> <!-- Leads.TC001_Create_A_Lead_And_Verify_If_Lead_Is_Created_Successfully -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

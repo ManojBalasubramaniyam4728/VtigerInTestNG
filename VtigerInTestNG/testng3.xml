@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Sanity">
+	<listeners>
+		<listener class-name="AAA_ITestListener.listeneres" />
+		<listener class-name="Resources.extentReporterNG" />
+	</listeners>
+	<test name="Test">
+		<classes>
+			<class name="Leads.TC001_Create_A_Lead_And_Verify_If_Lead_Is_Created_Successfully" />
+		</classes>
+	</test>
+	<test name="Test1">
+		<classes>
+			<class name="Organization.TC001_Create_An_Organization_And_Verify_If_Organization_Is_Created_Successfully" />
+		</classes>
+	</test>
+	<test name="Test2">
+		<classes>
+			<class name="Contacts.TC001_Create_A_Contact_And_Verify_If_Contact_Is_Created_Successfully" />
+		</classes>
+	</test>
+	<test name="Test3">
+		<classes>
+			<class name="Vendor.TC001_Create_A_Vendor_And_Verify_If_Vendor_Is_Created_Successfully" />
+		</classes>
+	</test>
+</suite> 
